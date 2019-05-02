@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="fe628632-86d0-41fd-bbf1-9e7e4b4e8c26"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"f1cc932a-029a-4530-bb03-a6b41c578cd7":{"roots":{"references":[{"attributes":{},"id":"f9ee7abd-7470-4013-8a68-b7248bf0a97f","type":"BasicTicker"},{"attributes":{"plot":{"id":"7edda2b1-732b-4925-ae3e-7297cc455750","subtype":"Figure","type":"Plot"},"ticker":{"id":"f9ee7abd-7470-4013-8a68-b7248bf0a97f","type":"BasicTicker"}},"id":"71f320c1-b32f-420d-beca-f4fc0b21dc7f","type":"Grid"},{"attributes":{"axis_label":"Romance (little -> a lot)","formatter":{"id":"fc60af86-3d66-4520-8084-f560d3bc845e","type":"BasicTickFormatter"},"plot":{"id":"7edda2b1-732b-4925-ae3e-7297cc455750","subtype":"Figure","type":"Plot"},"ticker":{"id":"6980fd5c-2b0d-4777-a3a5-c499dc8912e5","type":"BasicTicker"}},"id":"4f8f6c7f-30c4-4574-a5be-198265f16cdd","type":"LinearAxis"},{"attributes":{},"id":"6980fd5c-2b0d-4777-a3a5-c499dc8912e5","type":"BasicTicker"},{"attributes":{"callback":null,"tooltips":[["name","@name"],["RT score","@score"]]},"id":"64a819cd-5d81-4a16-bc35-68484020b607","type":"HoverTool"},{"attributes":{"dimension":1,"plot":{"id":"7edda2b1-732b-4925-ae3e-7297cc455750","subtype":"Figure","type":"Plot"},"ticker":{"id":"6980fd5c-2b0d-4777-a3a5-c499dc8912e5","type":"BasicTicker"}},"id":"9a0aa431-1ef4-42f9-ab47-9a44e2c7c26c","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":20},"x":{"field":"x"},"y":{"field":"y"}},"id":"09244d97-2e6f-4e60-a344-daaf9b6480a4","type":"Circle"},{"attributes":{"source":{"id":"54b0e3db-81e3-41d9-822e-da6fd0c21699","type":"ColumnDataSource"}},"id":"ec67a85d-10c7-44f1-a157-1f4253d341ca","type":"CDSView"},{"attributes":{"below":[{"id":"64254323-a964-4495-a7bc-46b9093cfc45","type":"LinearAxis"}],"left":[{"id":"4f8f6c7f-30c4-4574-a5be-198265f16cdd","type":"LinearAxis"}],"renderers":[{"id":"64254323-a964-4495-a7bc-46b9093cfc45","type":"LinearAxis"},{"id":"71f320c1-b32f-420d-beca-f4fc0b21dc7f","type":"Grid"},{"id":"4f8f6c7f-30c4-4574-a5be-198265f16cdd","type":"LinearAxis"},{"id":"9a0aa431-1ef4-42f9-ab47-9a44e2c7c26c","type":"Grid"},{"id":"70a9a20a-fde9-4cea-9e3f-78609e8a466b","type":"GlyphRenderer"}],"title":{"id":"c1ecea54-24e2-4fec-ada0-cca6cb728749","type":"Title"},"toolbar":{"id":"ed62dffd-752c-4cef-89f9-428b391958e3","type":"Toolbar"},"x_range":{"id":"8a75334e-95cf-4040-9c24-404856572dc9","type":"DataRange1d"},"x_scale":{"id":"d260a145-9907-4612-bb0c-74f65e3d08cf","type":"LinearScale"},"y_range":{"id":"fc523020-34ae-4790-9a32-c4939d53a12f","type":"DataRange1d"},"y_scale":{"id":"cd3450dd-eb73-484b-bb5b-63fd83386095","type":"LinearScale"}},"id":"7edda2b1-732b-4925-ae3e-7297cc455750","subtype":"Figure","type":"Plot"},{"attributes":{"plot":null,"text":"Movie plotted onto 2 principal directions"},"id":"c1ecea54-24e2-4fec-ada0-cca6cb728749","type":"Title"},{"attributes":{},"id":"d435becb-dc8a-4be9-b963-b4eb69adc841","type":"BasicTickFormatter"},{"attributes":{"callback":null,"column_names":["x","y","name","score","color"],"data":{"color":["#d9ef8b","#219c52","#30a356","#17934e","#4eb15d","#0c7f43","#30a356","#e54e35","#e0422f","#3faa59","#73c264","#3faa59","#148e4b","#118848","#118848","#fff6b0","#0a7b41","#6bbf64","#eb5a3a","#279f53","#199750","#fdc372","#5db961","#006837","#17934e","#98d368","#0c7f43","#66bd63","#afdd70","#c5e67e","#05713c","#fbfdba","#0c7f43","#b5df74","#4eb15d","#279f53","#d9ef8b"],"name":["Independence Day (a.k.a. ID4) (1996)","Spider-Man (2002)","Matrix, The (1999)","Shawshank Redemption, The (1994)","American History X (1998)","Wild Strawberries (Smultronst\u00e4llet) (1957)","Control (2007)","Miss Congeniality 2: Armed and Fabulous (2005)","Just My Luck (2006)","Santa Sangre (1989)","Videodrome (1983)","Billy Elliot (2000)","Pride (2014)","Jurassic Park (1993)","Star Wars: Episode IV - A New Hope (1977)","Princess Diaries, The (2001)","Schindler's List (1993)","Fight Club (1999)","New York Ripper, The (Squartatore di New York, Lo) (1982)","American Beauty (1999)","City of God (Cidade de Deus) (2002)","Battleship (2012)","Take Care of My Cat (Goyangileul butaghae) (2001)","Terminator, The (1984)","Edge of Tomorrow (2014)","Forrest Gump (1994)","King's Speech, The (2010)","Life Is Beautiful (La Vita \u00e8 bella) (1997)","Stage Fright (Deliria) (1987)","Ichi the Killer (Koroshiya 1) (2001)","Brazil (1985)","Fountain, The (2006)","Accused, The (1988)","Time to Kill, A (1996)","Ghost Writer, The (2010)","Superbad (2007)","American Pie (1999)"],"score":[0.6,0.89,0.87,0.91,0.83,0.95,0.87,0.15,0.13,0.85,0.78,0.85,0.92,0.93,0.93,0.47,0.96,0.79,0.17,0.88,0.9,0.34,0.81,1.0,0.91,0.72,0.95,0.8,0.68,0.64,0.98,0.51,0.95,0.67,0.83,0.88,0.6],"x":[-1.3363515138626099,-1.8025015592575073,-2.286163568496704,-2.443519353866577,-2.392648220062256,-2.74015474319458,-2.465698003768921,-0.6743589043617249,-0.6530644297599792,-2.5101945400238037,-2.399527072906494,-2.238823890686035,-2.4565324783325195,-1.7509064674377441,-2.3266828060150146,-1.1496403217315674,-2.4564225673675537,-2.5044500827789307,-1.731709599494934,-2.5586233139038086,-2.625666379928589,-0.837259829044342,-2.419090986251831,-2.160684108734131,-1.9740976095199585,-1.997380018234253,-2.2265164852142334,-2.360276222229004,-2.0090346336364746,-2.2170116901397705,-2.6285085678100586,-2.2373313903808594,-2.1655569076538086,-1.7048553228378296,-2.198833465576172,-2.1166231632232666,-1.5780787467956543],"y":[-1.9647985696792603,-1.6150850057601929,-1.6005288362503052,-1.675600528717041,-1.4201390743255615,-0.5430135726928711,-0.9142603278160095,-1.7747220993041992,-1.89305579662323,-0.37550652027130127,-0.7349996566772461,-1.272670030593872,-1.1413620710372925,-1.7455519437789917,-1.5359869003295898,-1.8794794082641602,-1.5074814558029175,-1.3258657455444336,-1.1654037237167358,-1.120046854019165,-1.131786823272705,-1.89828360080719,-0.666018545627594,-1.459130048751831,-1.6788926124572754,-1.8159329891204834,-1.5279041528701782,-1.501914381980896,-0.9783639311790466,-0.874896228313446,-0.7148168683052063,-1.0522679090499878,-1.3329379558563232,-1.817132592201233,-1.2048808336257935,-1.4046891927719116,-1.6707844734191895]}},"id":"54b0e3db-81e3-41d9-822e-da6fd0c21699","type":"ColumnDataSource"},{"attributes":{"fill_color":{"field":"color"},"line_color":{"field":"color"},"size":{"units":"screen","value":20},"x":{"field":"x"},"y":{"field":"y"}},"id":"f98da2ec-7cf1-41b2-81ac-4b0c2c1f3b6c","type":"Circle"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"64a819cd-5d81-4a16-bc35-68484020b607","type":"HoverTool"}]},"id":"ed62dffd-752c-4cef-89f9-428b391958e3","type":"Toolbar"},{"attributes":{"data_source":{"id":"54b0e3db-81e3-41d9-822e-da6fd0c21699","type":"ColumnDataSource"},"glyph":{"id":"f98da2ec-7cf1-41b2-81ac-4b0c2c1f3b6c","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"09244d97-2e6f-4e60-a344-daaf9b6480a4","type":"Circle"},"selection_glyph":null,"view":{"id":"ec67a85d-10c7-44f1-a157-1f4253d341ca","type":"CDSView"}},"id":"70a9a20a-fde9-4cea-9e3f-78609e8a466b","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"8a75334e-95cf-4040-9c24-404856572dc9","type":"DataRange1d"},{"attributes":{"callback":null},"id":"fc523020-34ae-4790-9a32-c4939d53a12f","type":"DataRange1d"},{"attributes":{},"id":"d260a145-9907-4612-bb0c-74f65e3d08cf","type":"LinearScale"},{"attributes":{},"id":"cd3450dd-eb73-484b-bb5b-63fd83386095","type":"LinearScale"},{"attributes":{},"id":"fc60af86-3d66-4520-8084-f560d3bc845e","type":"BasicTickFormatter"},{"attributes":{"axis_label":"Quality (good -> bad)","formatter":{"id":"d435becb-dc8a-4be9-b963-b4eb69adc841","type":"BasicTickFormatter"},"plot":{"id":"7edda2b1-732b-4925-ae3e-7297cc455750","subtype":"Figure","type":"Plot"},"ticker":{"id":"f9ee7abd-7470-4013-8a68-b7248bf0a97f","type":"BasicTicker"}},"id":"64254323-a964-4495-a7bc-46b9093cfc45","type":"LinearAxis"}],"root_ids":["7edda2b1-732b-4925-ae3e-7297cc455750"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"f1cc932a-029a-4530-bb03-a6b41c578cd7","elementid":"fe628632-86d0-41fd-bbf1-9e7e4b4e8c26","modelid":"7edda2b1-732b-4925-ae3e-7297cc455750"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
